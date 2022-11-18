@@ -1,0 +1,43 @@
+.signup {
+  width: 100%;
+  background-color: grey;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.register {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  width: 22rem;
+  gap: 1rem;
+  padding: 1rem;
+  &__child {
+    &--select {
+      background-color: white;
+    }
+    &--box {
+      padding: $box-padding;
+      padding-left: 2rem;
+      width: 100%;
+      border: $box-border;
+      border-radius: $box-radius;
+      @include remove-outline;
+    }
+    &--align-center {
+      text-align: center;
+    }
+  }
+  &__icons {
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    color: grey;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+}
+.icon-wrapper {
+  position: relative;
+}
